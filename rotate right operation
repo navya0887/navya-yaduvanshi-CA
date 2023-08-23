@@ -1,0 +1,24 @@
+
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+mvi 03
+MVI A,02
+RLC
+RLC
+RLC
+RLC
+STA 2000
+stop 1
+
+
+
+
+hlt

@@ -1,0 +1,27 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+lxi h,1100
+mov b,m
+mvi a,00
+mvi c,a
+inx h
+cont:add m
+jnc skip
+inr c
+skip:dcr b
+jnz cont
+sta 1102
+mov a,c
+sta 1103
+
+
+
+hlt
